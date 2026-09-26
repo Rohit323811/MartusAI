@@ -1,0 +1,32 @@
+[
+  {
+    "id": "clinic_001",
+    "name": "Demo Legal Aid Center",
+    "issue_types": ["eviction", "wage_theft"],
+    "address": "100 Demo St, Los Angeles, CA",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "phone": "+1-555-0100",
+    "website": "https://example.org"
+  },
+  {
+    "id": "clinic_002",
+    "name": "Tenant Rights Workshop (demo)",
+    "issue_types": ["eviction"],
+    "address": "200 Demo Ave, Long Beach, CA",
+    "lat": 33.7701,
+    "lng": -118.1937,
+    "phone": "+1-555-0101",
+    "website": "https://example.org"
+  },
+  {
+    "id": "clinic_003",
+    "name": "Worker Justice Clinic (demo)",
+    "issue_types": ["wage_theft"],
+    "address": "300 Demo Blvd, Santa Ana, CA",
+    "lat": 33.7455,
+    "lng": -117.8677,
+    "phone": "+1-555-0102",
+    "website": "https://example.org"
+  }
+]

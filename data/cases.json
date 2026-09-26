@@ -1,0 +1,12 @@
+[
+  { "id": "case_001", "issue": "eviction", "jurisdiction": "California", "outcome": "tenant_success", "summary": "Tenant disputed per-day late fees; court found fees punitive and ruled for tenant." },
+  { "id": "case_002", "issue": "eviction", "jurisdiction": "California", "outcome": "tenant_success", "summary": "Landlord failed to provide itemized ledger; case dismissed." },
+  { "id": "case_003", "issue": "eviction", "jurisdiction": "California", "outcome": "tenant_failure", "summary": "Tenant missed the pay-or-quit deadline; default judgment entered." },
+  { "id": "case_004", "issue": "eviction", "jurisdiction": "California", "outcome": "tenant_success", "summary": "Notice was served by email only; improperly served, dismissed." },
+  { "id": "case_005", "issue": "eviction", "jurisdiction": "California", "outcome": "tenant_failure", "summary": "Back rent undisputed; judgment for landlord with move-out date." },
+  { "id": "case_006", "issue": "wage_theft", "jurisdiction": "California", "outcome": "worker_success", "summary": "Pay stubs missing required info; labor commissioner ruled for worker." },
+  { "id": "case_007", "issue": "wage_theft", "jurisdiction": "California", "outcome": "worker_success", "summary": "Off-the-clock work documented via texts; employer ordered to pay." },
+  { "id": "case_008", "issue": "predatory_loan", "jurisdiction": "California", "outcome": "borrower_success", "summary": "APR exceeded state cap; contract terms voided." },
+  { "id": "case_009", "issue": "predatory_loan", "jurisdiction": "California", "outcome": "borrower_failure", "summary": "Borrower signed arbitration waiver; case moved out of court." },
+  { "id": "case_010", "issue": "eviction", "jurisdiction": "California", "outcome": "tenant_success", "summary": "Retaliation after repair request proven; eviction blocked." }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "seed_01",
+    "issue_type": "eviction",
+    "jurisdiction": "Maharashtra, IN",
+    "context": "A tenant in Maharashtra",
+    "outcome": "Responded within 10 days. The eviction was withdrawn.",
+    "timeAgo": "3 months ago"
+  },
+  {
+    "id": "seed_02",
+    "issue_type": "eviction",
+    "jurisdiction": "California, US",
+    "context": "A renter in Fresno",
+    "outcome": "Asked for an itemized ledger. The landlord dropped $900 of the $1,400 claimed.",
+    "timeAgo": "2 months ago"
+  },
+  {
+    "id": "seed_03",
+    "issue_type": "eviction",
+    "jurisdiction": "Texas, US",
+    "context": "A tenant in Houston",
+    "outcome": "Missed the hearing date. Lost by default — please don't skip court.",
+    "timeAgo": "5 months ago"
+  },
+  {
+    "id": "seed_04",
+    "issue_type": "wage_theft",
+    "jurisdiction": "California, US",
+    "context": "A warehouse worker",
+    "outcome": "Filed with the labor commissioner using the drafted letter. Settled for 3 weeks of unpaid overtime.",
+    "timeAgo": "1 month ago"
+  },
+  {
+    "id": "seed_05",
+    "issue_type": "wage_theft",
+    "jurisdiction": "New York, US",
+    "context": "A restaurant server",
+    "outcome": "Texts proved off-the-clock shifts. Employer paid in full.",
+    "timeAgo": "4 months ago"
+  },
+  {
+    "id": "seed_06",
+    "issue_type": "predatory_loan",
+    "jurisdiction": "California, US",
+    "context": "A borrower with a title loan",
+    "outcome": "APR was over the state cap. The interest was voided; kept the car.",
+    "timeAgo": "2 months ago"
+  },
+  {
+    "id": "seed_07",
+    "issue_type": "predatory_loan",
+    "jurisdiction": "Illinois, US",
+    "context": "A payday-loan borrower",
+    "outcome": "Requested a payment plan in writing. Fees froze for 6 months.",
+    "timeAgo": "6 months ago"
+  },
+  {
+    "id": "seed_08",
+    "issue_type": "eviction",
+    "jurisdiction": "Ontario, CA",
+    "context": "A tenant in Toronto",
+    "outcome": "Landlord entered without 24h notice — documented it, tribunal sided with tenant.",
+    "timeAgo": "3 weeks ago"
+  }
+]

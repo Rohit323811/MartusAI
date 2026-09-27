@@ -114,10 +114,89 @@ export default function LandingPage() {
               Designed for the moment you receive a letter you don&apos;t
               understand — on a phone, with a deadline looming.
             </p>
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
-              {steps.map((s, i) => (
-                <FeatureCard key={i} {...s} />
-              ))}
+
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {/* Step 1 */}
+              <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-surface p-5 shadow-sm transition-all hover:shadow-md">
+                <div className="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl border border-border/60 bg-muted/30 p-3">
+                  <div className="flex h-full flex-col justify-between rounded-lg border border-dashed border-primary/40 bg-background/80 p-3">
+                    <div className="flex items-center gap-2 text-xs font-semibold text-primary">
+                      <FileText className="h-4 w-4" aria-hidden="true" />
+                      <span>Upload document</span>
+                    </div>
+                    <div className="my-auto text-center">
+                      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                        <FileText className="h-5 w-5" aria-hidden="true" />
+                      </div>
+                      <p className="mt-2 text-[11px] font-medium text-foreground">
+                        Drop eviction notice or photo here
+                      </p>
+                      <p className="text-[9px] text-muted-foreground">
+                        PNG, JPEG, PDF up to 10MB
+                      </p>
+                    </div>
+                    <div className="rounded bg-primary/10 py-1 text-center text-[10px] font-medium text-primary">
+                      Step 1: Upload Document
+                    </div>
+                  </div>
+                </div>
+                <h3 className="font-display text-lg font-semibold">1. Upload</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  Upload a photo of a notice or letter, or type your situation. No account required.
+                </p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-surface p-5 shadow-sm transition-all hover:shadow-md">
+                <div className="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl border border-border/60 bg-muted/30 p-3">
+                  <div className="flex h-full flex-col justify-between rounded-lg border border-border bg-background/80 p-3">
+                    <div className="flex items-center justify-between border-b border-border/60 pb-1.5 text-[10px]">
+                      <span className="font-medium text-foreground">Result Analysis</span>
+                      <span className="rounded bg-flag-green/10 px-1.5 py-0.5 font-semibold text-flag-green">High Confidence</span>
+                    </div>
+                    <div className="space-y-1.5 my-auto">
+                      <div className="h-2 w-full rounded bg-flag-green/20" />
+                      <div className="h-2 w-4/5 rounded bg-flag-green/20" />
+                      <div className="h-2 w-3/5 rounded bg-flag-yellow/20" />
+                    </div>
+                    <div className="rounded bg-primary/10 py-1 text-center text-[10px] font-medium text-primary">
+                      Step 2: Instant Citation Analysis
+                    </div>
+                  </div>
+                </div>
+                <h3 className="font-display text-lg font-semibold">2. Get answers</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  Every sentence is color-coded by confidence, with every legal claim backed by citations.
+                </p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-surface p-5 shadow-sm transition-all hover:shadow-md">
+                <div className="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl border border-border/60 bg-muted/30 p-3">
+                  <div className="flex h-full flex-col justify-between rounded-lg border border-border bg-background/80 p-3">
+                    <div className="flex items-center justify-between text-[10px]">
+                      <span className="font-semibold text-deadline">7 Days Remaining</span>
+                      <span className="rounded bg-secondary px-1.5 py-0.5 text-[9px] text-muted-foreground">Draft ready</span>
+                    </div>
+                    <div className="my-auto space-y-1">
+                      <div className="flex items-center gap-1.5 text-[10px] text-foreground">
+                        <span className="h-1.5 w-1.5 rounded-full bg-deadline" />
+                        <span className="font-medium">Timeline: Response due Oct 1st</span>
+                      </div>
+                      <div className="rounded border border-border/50 bg-secondary/60 p-1.5 text-[9px] text-muted-foreground line-clamp-2">
+                        Dear Landlord, I am writing regarding the pay-or-quit notice dated...
+                      </div>
+                    </div>
+                    <div className="rounded bg-primary/10 py-1 text-center text-[10px] font-medium text-primary">
+                      Step 3: Response Draft & Timeline
+                    </div>
+                  </div>
+                </div>
+                <h3 className="font-display text-lg font-semibold">3. Act</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  Deadlines mapped on a timeline, ready-to-edit response draft, and legal aid connection options.
+                </p>
+              </div>
             </div>
       </div>
         </section>

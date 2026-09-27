@@ -34,8 +34,8 @@ export function HeroMockup() {
               Notice to Quit
             </p>
           </div>
-          <span className="rounded-full bg-flag-red/10 px-2.5 py-1 text-xs font-medium text-flag-red">
-            4 flags found
+          <span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary">
+            Example output ↓
           </span>
         </div>
 

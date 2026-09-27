@@ -61,8 +61,23 @@ export function InputTabs() {
   );
 
   const trySample = useCallback(() => {
-    beginProcessing("type");
-  }, [beginProcessing]);
+    if (!canAnalyze) {
+      setGateOpen(true);
+      return;
+    }
+    setSubmitting(true);
+    try {
+      const samplePending: PendingInput = {
+        mode: "upload",
+        text: "Sample Eviction Notice / Notice to Quit - 7 Day Pay or Quit",
+      };
+      stashPendingInput(samplePending);
+      router.push(`/processing?mode=upload`);
+    } catch {
+      setError("Something went wrong loading the sample document. Please try again.");
+      setSubmitting(false);
+    }
+  }, [canAnalyze, router]);
 
   const handleFiles = useCallback((files: FileList | null) => {
     setError(null);
@@ -252,9 +267,39 @@ export function InputTabs() {
         )}
       </AnimatePresence>
 
-      <div className="mt-4 flex justify-center">
-        <Button variant="link" onClick={trySample} className="text-sm">
-          Try a sample document →
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+        <Button
+          variant="secondary"
+          size="sm"
+          onClick={() => {
+            setTab("upload");
+            setTimeout(() => inputRef.current?.click(), 50);
+          }}
+          className="rounded-full px-4 text-xs font-medium sm:text-sm"
+        >
+          <Upload className="mr-1.5 h-3.5 w-3.5" aria-hidden="true" />
+          Upload a document
+        </Button>
+
+        <Button
+          variant="primary"
+          size="sm"
+          onClick={trySample}
+          disabled={submitting}
+          className="rounded-full px-4 text-xs font-medium sm:text-sm"
+        >
+          <FileText className="mr-1.5 h-3.5 w-3.5" aria-hidden="true" />
+          Try a sample
+        </Button>
+
+        <Button
+          variant="secondary"
+          size="sm"
+          onClick={() => setTab("type")}
+          className="rounded-full px-4 text-xs font-medium sm:text-sm"
+        >
+          <Keyboard className="mr-1.5 h-3.5 w-3.5" aria-hidden="true" />
+          Describe your situation
         </Button>
       </div>
 

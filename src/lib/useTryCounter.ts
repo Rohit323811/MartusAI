@@ -34,6 +34,11 @@ export function clearTries() {
   }
 }
 
+export function addFreeTries(amount: number = 10) {
+  const currentUsed = getTriesUsed();
+  setTriesUsed(Math.max(0, currentUsed - amount));
+}
+
 export function useTryCounter() {
   const { isSignedIn, isLoading } = useSession();
   const [triesUsed, setUsed] = useState(0);
@@ -63,12 +68,23 @@ export function useTryCounter() {
     setTriesUsed(getTriesUsed() + 1);
   }, [isSignedIn]);
 
+  const reset = useCallback(() => {
+    clearTries();
+    setUsed(0);
+  }, []);
+
+  const addTries = useCallback((amount: number = 10) => {
+    addFreeTries(amount);
+    setUsed(getTriesUsed());
+  }, []);
+
   return {
     triesUsed,
     triesRemaining,
     isLimited,
     increment,
-    reset: clearTries,
+    addTries,
+    reset,
     canAnalyze: isSignedIn || triesRemaining > 0,
     mounted,
   };

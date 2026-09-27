@@ -3,7 +3,7 @@
 **Know your rights. Before the deadline does.**
 
 Upload any legal document. Get plain-language answers, cited sources, and a
-draft response — in under 30 seconds. Built for the InfinityX Global
+draft response — in under 30 seconds. Built for the Lex Hacks
 Hackathon 2K26.
 
 > MartusAI provides legal **information**, not legal advice.
